@@ -21,6 +21,7 @@
   flex-direction: column;
   gap: 1rem;
   padding: 1rem;
+  color: white;
 }
 
 header {
@@ -168,8 +169,15 @@ li {
   .informacion_home {
     flex-direction: row;
   }
+
+  .informacion_home .eladio_Home,
+  .informacion_home .info_eladio {
+    width: 50%;
+  }
+
   .albums {
     flex-direction: row;
+    padding: 2%;
   }
   .albums .carousel,
   .albums .lista_albums {
