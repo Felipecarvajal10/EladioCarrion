@@ -1,3 +1,11 @@
+$color_texto: white;
+
+@mixin container-base {
+  background-color: black;
+  display: flex;
+  flex-direction: column;
+}
+
 * {
   margin: 0;
   padding: 0;
@@ -5,15 +13,11 @@
 }
 
 .container_home {
-  background-color: black;
-  display: flex;
-  flex-direction: column;
+  @include container-base;
 }
 
 .container_2 {
-  background-color: black;
-  display: flex;
-  flex-direction: column;
+  @include container-base;
 }
 
 .informacion_home {
@@ -21,7 +25,7 @@
   flex-direction: column;
   gap: 1rem;
   padding: 1rem;
-  color: white;
+  color: $color_texto;
 }
 
 .navbar_general {
@@ -156,13 +160,10 @@ li {
 }
 
 .container_merch {
-  color: white;
-}
-
-.container_merch {
   display: flex;
   flex-direction: column;
   justify-content: center;
+  color: white;
 }
 
 .ropa {
@@ -181,12 +182,16 @@ li {
 .boton_compra {
   display: inline-block;
   padding: 10px 20px;
-  background-color: #fcdc0f;
-  color: black;
+  background-color: #df0606;
+  color: white;
   text-decoration: none;
   border: none;
   border-radius: 4px;
   font-size: 16px;
+
+  &:hover {
+    background-color: #800202;
+  }
 }
 
 .merch_compra {
