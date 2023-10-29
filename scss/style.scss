@@ -45,9 +45,10 @@ body {
   }
 }
 
-.navbar {
+.iframe-navbar {
   width: 100%;
-  height: 200px;
+  //Es 200 + 2rem porque el padding es de 2rem
+  height: calc(200px + 2rem);
 }
 
 nav {
@@ -186,6 +187,11 @@ li {
 .medida_merch {
   width: 100%;
   padding: 1rem;
+  transition: transform 0.4s;
+
+  &:hover {
+    transform: scale(1.15);
+  }
 }
 
 .boton_compra {
@@ -197,9 +203,26 @@ li {
   border: none;
   border-radius: 4px;
   font-size: 16px;
+  transition: background-color 0.3s linear;
 
   &:hover {
     background-color: #800202;
+  }
+}
+
+.botones_nav {
+  a {
+    transition: all 0.3s;
+    flex: 1;
+    text-align: center;
+    padding: 0.5rem 0.5rem;
+
+    &:hover {
+      border: none;
+      border-radius: 4px;
+      background-color: #df0606;
+      color: white;
+    }
   }
 }
 
