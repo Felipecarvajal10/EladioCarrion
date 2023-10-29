@@ -1,3 +1,7 @@
+body {
+  font-family: Arial, Helvetica, sans-serif;
+}
+
 * {
   margin: 0;
   padding: 0;
@@ -81,6 +85,7 @@ footer {
   align-items: center;
   color: white;
   padding: 1rem;
+  margin-top: auto;
 }
 
 footer img {
@@ -150,6 +155,11 @@ main img {
   margin: 10%;
   color: white;
   line-height: 2;
+  min-height: 100vh;
+}
+
+.container_2 {
+  min-height: 100vh;
 }
 
 li {
@@ -251,6 +261,9 @@ li {
     display: grid;
     grid-template-columns: repeat(2, 1fr);
   }
+}
+.footer-copyright {
+  font-size: 1rem;
 }
 
 /*# sourceMappingURL=style.css.map */
